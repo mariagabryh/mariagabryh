@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" role="img" aria-label="Fim da transmissão">
+  <defs>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00F0FF"/><stop offset="0.5" stop-color="#8A5CFF"/><stop offset="1" stop-color="#FF2BD6"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05070D" stop-opacity="0"/><stop offset="1" stop-color="#05070D"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#00F0FF" stroke-opacity="0.07"/>
+    </pattern>
+  </defs>
+  <style>
+    .mono{font-family:'JetBrains Mono','Fira Code',Consolas,monospace}
+    .wave{animation:shift 8s ease-in-out infinite alternate}
+    @keyframes shift{from{transform:translateX(0)}to{transform:translateX(-60px)}}
+    .blink{animation:blink 1.2s steps(2) infinite}@keyframes blink{50%{opacity:0}}
+  </style>
+  <rect width="1200" height="170" rx="18" fill="#05070D"/>
+  <rect width="1200" height="170" rx="18" fill="url(#grid)"/>
+  <path class="wave" d="M0 40 Q 150 10 300 40 T 600 40 T 900 40 T 1200 40 T 1500 40" fill="none" stroke="url(#neon)" stroke-width="2" stroke-opacity="0.8"/>
+  <path class="wave" d="M0 52 Q 150 74 300 52 T 600 52 T 900 52 T 1200 52 T 1500 52" fill="none" stroke="url(#neon)" stroke-width="1" stroke-opacity="0.35"/>
+  <rect width="1200" height="170" rx="18" fill="url(#fade)" fill-opacity="0.4"/>
+  <text x="600" y="102" text-anchor="middle" class="mono" font-size="18" letter-spacing="6" fill="url(#neon)">// FIM DA TRANSMISSÃO</text>
+  <text x="600" y="132" text-anchor="middle" class="mono" font-size="13" fill="#8DA2B8">Obrigada pela visita, viajante. Conexão encerrada com sucesso<tspan class="blink" fill="#00F0FF">_</tspan></text>
+  <text x="600" y="156" text-anchor="middle" class="mono" font-size="11" letter-spacing="3" fill="#4E6175">MARIA_CLARA.SYS © 2026</text>
+</svg>

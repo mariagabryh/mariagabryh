@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="24" viewBox="0 0 1200 24" role="img" aria-label="divisor">
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00F0FF" stop-opacity="0"/>
+      <stop offset="0.3" stop-color="#00F0FF" stop-opacity="0.6"/>
+      <stop offset="0.7" stop-color="#FF2BD6" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FF2BD6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>.pl{animation:mv 3.5s linear infinite}@keyframes mv{from{transform:translateX(-160px)}to{transform:translateX(1200px)}}</style>
+  <rect x="0" y="11" width="1200" height="2" fill="url(#line)"/>
+  <rect class="pl" x="0" y="11" width="160" height="2" fill="url(#pulse)"/>
+  <path d="M600 4l8 8-8 8-8-8z" fill="#05070D" stroke="#00F0FF" stroke-width="1.5"/>
+  <circle cx="600" cy="12" r="2" fill="#FF2BD6"/>
+</svg>
